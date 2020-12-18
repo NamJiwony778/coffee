@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Consommation de café</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="table">
+  <div class="buttons">
+    <button name="q1" type="submit" value="Question 1" onclick="showTables(1)">Question 1</button>
+
+    <form id="consumptionFormByDay" action="server/consumptionByDay.php" method="POST">
+    <label for="weekDays">Sorter la consommation par jour</label><br>
+    <select name="weekDays" id="weekDays">
+      <option value="Lundi" id="Monday">Lundi</option>
+      <option value="Mardi" id="Tuesday">Mardi</option>
+      <option value="Mercredi" id ="Wednesday">Mercredi</option>
+      <option value="Jeudi" id="Thursday">Jeudi</option>
+      <option value="Vendredi" id="Friday">Vendredi</option>
+    </select><br>
+    <input type="submit" name="submit" value="Question 2" id="submitDay"/>
+  </form>
+
+    <button name="q3" type="submit" value="Question 3" onclick="showTables(3)">Question 3</button>
+    <button name="q4" type="submit" value="Question 4" onclick="showTables(4)">Question 4</button>
+    
+    <form id="consumptionCoffeeProg" action="server/consumptionByProg.php" method="POST">
+      <label for="CoffeeProg">Sorter la consommation par programmeur</label><br>
+      <select name="CoffeeProg" id="CoffeeProg">
+        <option value="Gilbert">Gilbert</option>
+        <option value="Wally">Wally</option>
+        <option value="Edgar">Edgar</option>
+        <option value="Eugene">Eugene</option>
+        <option value="Clarence">Clarence</option>
+        <option value="Josephine">Josephine</option>
+      </select><br>
+      <input type="submit" name="submit" value="Question 5" id="submitPr"/>
+    </form>
+
+    <button name="q6" type="submit" value="Question 6" onclick="showTables(6)">Question 6</button>
+ </div>
+ <form id="consumptionForm" action="server/consumption.php" method="GET"></form>
+ <form id="maxCofeeForm" action="server/maxCofee.php" method="GET"></form>
+ <form id="avarageCoffeeForm" action="server/avarageCoffee.php" method="GET"></form>
+ <form id="avarageCoffeeDay" action="server/avarageCoffeeDay.php" method="GET"></form>
+ 
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

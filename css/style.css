@@ -1,0 +1,20 @@
+.tab-sector, .buttons {
+    display:flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+button, input {
+    background-color: #00ff99;
+    border-radius: 5%;
+    border-color: #00995c;
+    margin-left: 10px;
+}
+
+button:hover, input:hover {
+    background-color:#80ffcc;
+}
+
+label, select {
+    margin-left: 10px;
+}
